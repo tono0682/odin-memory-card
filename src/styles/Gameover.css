@@ -1,0 +1,74 @@
+.gameover {
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.modal {
+    border-radius: 20px;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gameover button {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #000;
+    color: var(--accent-color);
+    background: #e8e8e8;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+   }
+   
+   .gameover button:before, .gameover button:after {
+    content: "";
+    position: absolute;
+    color: var(--accent-color);
+    background: #e8e8e8;
+    transition: all .2s linear;
+   }
+   
+   .gameover button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   .gameover button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+   .gameover button:hover {
+    cursor: crosshair;
+   }
+   
+   .gameover button:active {
+    transform: scale(0.95);
+   }
+   
+   .gameover button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+   .gameover button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   .gameover button span {
+    font-size: 2em;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }

@@ -1,0 +1,34 @@
+*, *::before, *::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'njnaruto';
+  src: url('./assets/fonts/njnaruto.ttf') format('truetype');
+}
+
+:root {
+  font-family: 'njnaruto' , Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.95);
+  --accent-color: #ff3663;
+}
+
+body {
+  padding: 1em;
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  background: url("https://media3.giphy.com/media/3oxkPZ6yabsze/giphy.gif?cid=ecf05e476pk1ym665n3evkohcqzdzrlt6jorydorsj4cssij&ep=v1_gifs_search&rid=giphy.gif&ct=g") no-repeat center 20% fixed;
+  background-size:cover;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
