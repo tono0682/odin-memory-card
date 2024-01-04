@@ -61,19 +61,29 @@ function App() {
   }
 
   function drawCards(numCards) {
+    // NEED TO FIX!!!
     const shuffledCards = shuffleCards(characters);
   
     const selectedCards = shuffledCards.filter((card) => card.isSelected);
     const unselectedCards = shuffledCards.filter((card) => !card.isSelected);
     const cntSelected = selectedCards.length;
+    const cntRemaining = cntCharacters - cntSelected;
     const maxUnselected = numCards - 1;
-  
+    console.clear()
+    console.table(selectedCards);
+    console.table(unselectedCards)
+
+    console.log(selectedCards.length < numCards, cntRemaining <=  maxUnselected, numCards - cntRemaining )
     const nDrawUnselected = selectedCards.length < numCards
       ? numCards - cntSelected
+      : cntRemaining <=  numCards - 1
+      ? Math.floor(Math.random() * cntRemaining) + 1
       : Math.floor(Math.random() * maxUnselected) + 1;
   
     const nDrawSelected = nDrawUnselected === 0 ? numCards : numCards - nDrawUnselected;
-  
+    
+    console.log(cntRemaining, nDrawSelected, nDrawUnselected)
+
     const nextCards = shuffleCards([
       ...unselectedCards.slice(0, nDrawUnselected),
       ...selectedCards.slice(0, nDrawSelected),
