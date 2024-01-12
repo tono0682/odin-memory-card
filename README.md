@@ -2,6 +2,8 @@
 
 Welcome to the Memory Card Game repository! This simple and engaging card-matching game is built using React, Vite, JavaScript, and CSS. Exercise your memory skills by matching pairs of cards while enjoying a visually appealing and responsive web interface.
 
+![Memory Card Game](public/memory-card-app.png)
+
 ## Technologies Used
 
 - **React**: A powerful JavaScript library for building user interfaces.
