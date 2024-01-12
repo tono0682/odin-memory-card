@@ -22,7 +22,7 @@ This project is a great opportunity to explore and understand the following conc
 
 - **`useEffect` Hook**: Learn how to use the `useEffect` hook in React to manage side effects, such as updating the game state based on user actions.
 - **API Integration with React**: Discover how to integrate APIs into a React application. You can extend the game by fetching cards dynamically from an external API.
-- - **Deploying with Vercel**: Explore the process of deploying a React application using Vercel. Understand the steps involved in making your Memory Card Game accessible to users on the web.
+- **Deploying with Vercel**: Explore the process of deploying a React application using Vercel. Understand the steps involved in making your Memory Card Game accessible to users on the web.
 
 - ## Folder Structure
 
